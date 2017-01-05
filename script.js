@@ -48,7 +48,6 @@ majorKey += "11"; //"2911"
 var array = [];
 for (var i = 0; i < majorKey.length; i++) {
   array[i] = majorKey.charAt(i);
-
 }
 //array = ["2", "9", "1", "1"]
 
@@ -91,7 +90,8 @@ while (z > 0) {
 function funTimes(val) {
   val = val.toString();
   if (val.length > 1) {
-    val = val.substring(1, val.length);
+    val = val.slice(1);
+  //  val = val.substring(1, val.length);
   }
   return val;
 }
